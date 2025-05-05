@@ -13,7 +13,8 @@ expected_codes = [
 # Calcul du code attendu d5 : partie entière de la moyenne de d1 à d4
 d5_expected = math.floor(sum(expected_codes) / len(expected_codes))
 
-# -------- Initialisation du state --------nif "stage" not in st.session_state:
+# -------- Initialisation du state --------n
+if "stage" not in st.session_state:
     st.session_state.stage = 1
 
 st.title("Simulateur de cadenas - TP Maths 4e")
