@@ -36,7 +36,8 @@ for i in range(1, 5):
         else:
             st.error("❌ Code incorrect, réessayez.")
 
-# -------- Étape 5 --------if st.session_state.stage == 5:
+# -------- Étape 5 --------
+if st.session_state.stage == 5:
     st.write("---")
     st.write("### Étape 5 : partie entière de la moyenne de d1 à d4")
     d5_val = st.number_input(
@@ -51,7 +52,8 @@ for i in range(1, 5):
         else:
             st.error(f"❌ Code incorrect, la partie entière attendue est {d5_expected}.")
 
-# -------- Félicitations --------if st.session_state.stage > 5:
+# -------- Félicitations --------
+if st.session_state.stage > 5:
     st.balloons()
     st.success("🎉 Tous les cadenas sont déverrouillés ! Bravo !")
     st.write("Vous avez complété toutes les étapes du TP.")
