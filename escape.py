@@ -20,7 +20,8 @@ if "stage" not in st.session_state:
 st.title("Simulateur de cadenas - TP Maths 4e")
 st.write("Entrez successivement d1, d2, d3, d4 puis d5 (partie entière de la moyenne) pour déverrouiller chaque cadenas.")
 
-# -------- Étapes 1 à 4 --------for i in range(1, 5):
+# -------- Étapes 1 à 4 --------
+for i in range(1, 5):
     disabled = (st.session_state.stage != i)
     user_val = st.number_input(
         f"Étape {i} : Entrez la valeur de d{i}",
